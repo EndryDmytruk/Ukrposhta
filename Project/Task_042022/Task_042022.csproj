@@ -16,8 +16,4 @@
     <EmbeddedResource Include="AppSetting.json" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
