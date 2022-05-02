@@ -1,6 +1,6 @@
-﻿namespace Task_042022
+﻿namespace Task_042022.MenuForm
 {
-    partial class HomeForm
+    partial class Home
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,67 +29,69 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Departments_Menu = new System.Windows.Forms.ToolStripMenuItem();
+            this.Positions_Menu = new System.Windows.Forms.ToolStripMenuItem();
+            this.Employees_Menu = new System.Windows.Forms.ToolStripMenuItem();
+            this.Payments_Menu = new System.Windows.Forms.ToolStripMenuItem();
+            this.Report_Menu = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5});
+            this.Departments_Menu,
+            this.Positions_Menu,
+            this.Employees_Menu,
+            this.Payments_Menu,
+            this.Report_Menu});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // toolStripMenuItem1
+            // Departments_Menu
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(130, 20);
-            this.toolStripMenuItem1.Text = "Редагування відділів";
+            this.Departments_Menu.Name = "Departments_Menu";
+            this.Departments_Menu.Size = new System.Drawing.Size(130, 20);
+            this.Departments_Menu.Text = "Редагування відділів";
+            this.Departments_Menu.Click += new System.EventHandler(this.Departments_Menu_Click);
             // 
-            // toolStripMenuItem2
+            // Positions_Menu
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(122, 20);
-            this.toolStripMenuItem2.Text = "Редагування посад";
+            this.Positions_Menu.Name = "Positions_Menu";
+            this.Positions_Menu.Size = new System.Drawing.Size(122, 20);
+            this.Positions_Menu.Text = "Редагування посад";
             // 
-            // toolStripMenuItem3
+            // Employees_Menu
             // 
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(158, 20);
-            this.toolStripMenuItem3.Text = "Додавання співробітника";
+            this.Employees_Menu.Name = "Employees_Menu";
+            this.Employees_Menu.Size = new System.Drawing.Size(158, 20);
+            this.Employees_Menu.Text = "Додавання співробітника";
             // 
-            // toolStripMenuItem4
+            // Payments_Menu
             // 
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(65, 20);
-            this.toolStripMenuItem4.Text = "Виплати";
+            this.Payments_Menu.Name = "Payments_Menu";
+            this.Payments_Menu.Size = new System.Drawing.Size(65, 20);
+            this.Payments_Menu.Text = "Виплати";
             // 
-            // toolStripMenuItem5
+            // Report_Menu
             // 
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(40, 20);
-            this.toolStripMenuItem5.Text = "Звіт";
+            this.Report_Menu.Name = "Report_Menu";
+            this.Report_Menu.Size = new System.Drawing.Size(40, 20);
+            this.Report_Menu.Text = "Звіт";
             // 
-            // HomeForm
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximizeBox = false;
-            this.Name = "HomeForm";
+            this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.menuStrip1.ResumeLayout(false);
@@ -102,10 +104,10 @@
         #endregion
 
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem toolStripMenuItem1;
-        private ToolStripMenuItem toolStripMenuItem2;
-        private ToolStripMenuItem toolStripMenuItem3;
-        private ToolStripMenuItem toolStripMenuItem4;
-        private ToolStripMenuItem toolStripMenuItem5;
+        private ToolStripMenuItem Departments_Menu;
+        private ToolStripMenuItem Positions_Menu;
+        private ToolStripMenuItem Employees_Menu;
+        private ToolStripMenuItem Payments_Menu;
+        private ToolStripMenuItem Report_Menu;
     }
 }
