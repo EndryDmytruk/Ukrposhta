@@ -1,3 +1,0 @@
-{
-  "DefaultConnectionDB": "Host=localhost; Port=5432; UserID=postgres; Password=root; Database=NewDB;"
-}

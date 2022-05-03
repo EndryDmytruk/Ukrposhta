@@ -1,4 +1,4 @@
-using Task_042022.Config;
+using DB;
 using Task_042022.MenuForm;
 
 namespace Task_042022
@@ -12,8 +12,7 @@ namespace Task_042022
             
             try
             {
-                var setting = AppSetting.Initialization();
-
+                var context = new ContextDB();
 
                 Application.Run(new Home());
             }
