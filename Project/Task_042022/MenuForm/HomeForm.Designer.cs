@@ -53,36 +53,36 @@
             this.Report_Menu});
             this.Menu.Location = new System.Drawing.Point(0, 0);
             this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(800, 24);
+            this.Menu.Size = new System.Drawing.Size(685, 24);
             this.Menu.TabIndex = 0;
             this.Menu.Text = "menuStrip1";
             // 
             // Departments_Menu
             // 
             this.Departments_Menu.Name = "Departments_Menu";
-            this.Departments_Menu.Size = new System.Drawing.Size(130, 20);
-            this.Departments_Menu.Text = "Редагування відділів";
+            this.Departments_Menu.Size = new System.Drawing.Size(138, 20);
+            this.Departments_Menu.Text = "Управління відділами";
             this.Departments_Menu.Click += new System.EventHandler(this.Departments_Menu_Click);
             // 
             // Positions_Menu
             // 
             this.Positions_Menu.Name = "Positions_Menu";
-            this.Positions_Menu.Size = new System.Drawing.Size(122, 20);
-            this.Positions_Menu.Text = "Редагування посад";
+            this.Positions_Menu.Size = new System.Drawing.Size(139, 20);
+            this.Positions_Menu.Text = "Управління посадами";
             this.Positions_Menu.Click += new System.EventHandler(this.Positions_Menu_Click);
             // 
             // Premiums_Menu
             // 
             this.Premiums_Menu.Name = "Premiums_Menu";
-            this.Premiums_Menu.Size = new System.Drawing.Size(129, 20);
-            this.Premiums_Menu.Text = "Редагування премій";
+            this.Premiums_Menu.Size = new System.Drawing.Size(139, 20);
+            this.Premiums_Menu.Text = "Управління преміями";
             this.Premiums_Menu.Click += new System.EventHandler(this.Premiums_Menu_Click);
             // 
             // Employees_Menu
             // 
             this.Employees_Menu.Name = "Employees_Menu";
-            this.Employees_Menu.Size = new System.Drawing.Size(158, 20);
-            this.Employees_Menu.Text = "Додавання співробітника";
+            this.Employees_Menu.Size = new System.Drawing.Size(129, 20);
+            this.Employees_Menu.Text = "Новий співробітник";
             this.Employees_Menu.Click += new System.EventHandler(this.Employees_Menu_Click);
             // 
             // Payments_Menu
@@ -104,8 +104,9 @@
             this.Departments_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Departments_ComboBox.Location = new System.Drawing.Point(12, 27);
             this.Departments_ComboBox.Name = "Departments_ComboBox";
-            this.Departments_ComboBox.Size = new System.Drawing.Size(776, 23);
+            this.Departments_ComboBox.Size = new System.Drawing.Size(661, 23);
             this.Departments_ComboBox.TabIndex = 1;
+            this.Departments_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Departments_ComboBox_SelectedIndexChanged);
             // 
             // ListEmployees_Table
             // 
@@ -123,7 +124,7 @@
             this.ListEmployees_Table.RowHeadersVisible = false;
             this.ListEmployees_Table.RowTemplate.Height = 25;
             this.ListEmployees_Table.ShowEditingIcon = false;
-            this.ListEmployees_Table.Size = new System.Drawing.Size(776, 382);
+            this.ListEmployees_Table.Size = new System.Drawing.Size(661, 382);
             this.ListEmployees_Table.TabIndex = 2;
             this.ListEmployees_Table.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListEmployees_Table_CellClick);
             // 
@@ -135,7 +136,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(685, 450);
             this.Controls.Add(this.ListEmployees_Table);
             this.Controls.Add(this.Departments_ComboBox);
             this.Controls.Add(this.Menu);
@@ -145,6 +146,7 @@
             this.Name = "HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HomeForm_FormClosing);
             this.Menu.ResumeLayout(false);
             this.Menu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ListEmployees_Table)).EndInit();

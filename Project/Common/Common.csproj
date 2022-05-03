@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="DbSetting.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="DbSetting.json" />
+  </ItemGroup>
+
 </Project>

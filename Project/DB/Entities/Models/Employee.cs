@@ -8,7 +8,7 @@ namespace DB.Entities.Models
 {
     public class Employee
     {
-        public string Code { get; set; }
+        public int? Code { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Lastname { get; set; }

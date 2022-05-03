@@ -59,8 +59,9 @@ namespace DB
             modelBuilder.Entity<Premium>().Property(x => x.Value).HasPrecision(3, 0);
 
             modelBuilder.Entity<Employee>().HasKey(x => new { x.Code});
+            modelBuilder.Entity<Employee>().Property(t => t.Code).ValueGeneratedNever();
             modelBuilder.Entity<Employee>().HasIndex(x => x.Phone).IsUnique();
-            modelBuilder.Entity<Employee>().Property(x => x.Salary).HasPrecision(6, 2);
+            modelBuilder.Entity<Employee>().Property(x => x.Salary).HasPrecision(10, 2);
         }
     }
 }

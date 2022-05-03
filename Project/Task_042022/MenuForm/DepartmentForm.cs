@@ -49,7 +49,8 @@ namespace Task_042022.MenuForm
 
         private void Delete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Підтвердьте видалення", "", MessageBoxButtons.OKCancel) != DialogResult.OK)
+            if (MessageBox.Show("Видалення відділу призведе до видалення всіх співробітників цього відділу",
+                "Підтвердьте видалення", MessageBoxButtons.OKCancel) != DialogResult.OK)
                 return;
 
             var status = _controller.DeleteRow(Id_TextBox.Text);

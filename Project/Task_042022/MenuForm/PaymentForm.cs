@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Task_042022.MenuForm
 {
-    public partial class NewEmployee : Form
+    public partial class PaymentForm : Form
     {
-        public NewEmployee()
+        public PaymentForm()
         {
             InitializeComponent();
         }

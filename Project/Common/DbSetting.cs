@@ -16,9 +16,11 @@ namespace Common
         {
             try
             {
-                using var reader = new StreamReader(@"..\..\..\..\DbSetting.json");
+                var assembly = Assembly.GetExecutingAssembly();
+                string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("DbSetting.json"));
+                using var stream = assembly.GetManifestResourceStream(resourceName);
+                using var reader = new StreamReader(stream!);
                 var result = reader.ReadToEnd();
-
                 return JsonSerializer.Deserialize<DbSetting>(result)!;
             }
             catch
