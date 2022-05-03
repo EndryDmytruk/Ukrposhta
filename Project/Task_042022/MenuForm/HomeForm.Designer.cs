@@ -1,6 +1,6 @@
 ﻿namespace Task_042022.MenuForm
 {
-    partial class Home
+    partial class HomeForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -35,7 +35,7 @@
             this.Employees_Menu = new System.Windows.Forms.ToolStripMenuItem();
             this.Payments_Menu = new System.Windows.Forms.ToolStripMenuItem();
             this.Report_Menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Departments_ComboBox = new System.Windows.Forms.ComboBox();
             this.ListEmployees_Table = new System.Windows.Forms.DataGridView();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
             this.Menu.SuspendLayout();
@@ -69,24 +69,28 @@
             this.Positions_Menu.Name = "Positions_Menu";
             this.Positions_Menu.Size = new System.Drawing.Size(122, 20);
             this.Positions_Menu.Text = "Редагування посад";
+            this.Positions_Menu.Click += new System.EventHandler(this.Positions_Menu_Click);
             // 
             // Premiums_Menu
             // 
             this.Premiums_Menu.Name = "Premiums_Menu";
             this.Premiums_Menu.Size = new System.Drawing.Size(129, 20);
             this.Premiums_Menu.Text = "Редагування премій";
+            this.Premiums_Menu.Click += new System.EventHandler(this.Premiums_Menu_Click);
             // 
             // Employees_Menu
             // 
             this.Employees_Menu.Name = "Employees_Menu";
             this.Employees_Menu.Size = new System.Drawing.Size(158, 20);
             this.Employees_Menu.Text = "Додавання співробітника";
+            this.Employees_Menu.Click += new System.EventHandler(this.Employees_Menu_Click);
             // 
             // Payments_Menu
             // 
             this.Payments_Menu.Name = "Payments_Menu";
             this.Payments_Menu.Size = new System.Drawing.Size(65, 20);
             this.Payments_Menu.Text = "Виплати";
+            this.Payments_Menu.Click += new System.EventHandler(this.Payments_Menu_Click);
             // 
             // Report_Menu
             // 
@@ -95,14 +99,13 @@
             this.Report_Menu.Text = "Звіт";
             this.Report_Menu.Click += new System.EventHandler(this.Report_Menu_Click);
             // 
-            // comboBox1
+            // Departments_ComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(776, 23);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.Text = "ФІльтр по відділах";
+            this.Departments_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Departments_ComboBox.Location = new System.Drawing.Point(12, 27);
+            this.Departments_ComboBox.Name = "Departments_ComboBox";
+            this.Departments_ComboBox.Size = new System.Drawing.Size(776, 23);
+            this.Departments_ComboBox.TabIndex = 1;
             // 
             // ListEmployees_Table
             // 
@@ -128,18 +131,18 @@
             // 
             this.saveFile.Filter = "Text files(*.txt)|*.txt";
             // 
-            // Home
+            // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.ListEmployees_Table);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.Departments_ComboBox);
             this.Controls.Add(this.Menu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MainMenuStrip = this.Menu;
             this.MaximizeBox = false;
-            this.Name = "Home";
+            this.Name = "HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Menu.ResumeLayout(false);
@@ -158,7 +161,7 @@
         private ToolStripMenuItem Employees_Menu;
         private ToolStripMenuItem Payments_Menu;
         private ToolStripMenuItem Report_Menu;
-        private ComboBox comboBox1;
+        private ComboBox Departments_ComboBox;
         private DataGridView ListEmployees_Table;
         private ToolStripMenuItem Premiums_Menu;
         private SaveFileDialog saveFile;

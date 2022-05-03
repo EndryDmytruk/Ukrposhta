@@ -1,4 +1,4 @@
-﻿using DB.Config;
+﻿using Common;
 using DB.Entities.Models;
 using Microsoft.EntityFrameworkCore;
 

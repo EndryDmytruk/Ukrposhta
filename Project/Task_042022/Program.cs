@@ -8,13 +8,10 @@ namespace Task_042022
         [STAThread]
         static void Main()
         {
-            ApplicationConfiguration.Initialize();
-            
             try
             {
-                var context = new ContextDB();
-
-                Application.Run(new Home());
+                ApplicationConfiguration.Initialize();
+                Application.Run(new HomeForm(new ContextDB()));
             }
             catch (Exception ex)
             {

@@ -1,8 +1,7 @@
-﻿
-using System.Reflection;
+﻿using System.Reflection;
 using System.Text.Json;
 
-namespace DB.Config
+namespace Common
 {
     public class DbSetting
     {
@@ -17,10 +16,7 @@ namespace DB.Config
         {
             try
             {
-                var assembly = Assembly.GetExecutingAssembly();
-                string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("DbSetting.json"));
-                using var stream = assembly.GetManifestResourceStream(resourceName);
-                using var reader = new StreamReader(stream!);
+                using var reader = new StreamReader(@"..\..\..\..\DbSetting.json");
                 var result = reader.ReadToEnd();
 
                 return JsonSerializer.Deserialize<DbSetting>(result)!;

@@ -1,6 +1,6 @@
 ﻿namespace Task_042022.MenuForm
 {
-    partial class Departments
+    partial class NewEmployee
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,16 @@
         {
             this.SuspendLayout();
             // 
-            // Departments
+            // NewEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Departments";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Departments";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Departments_FormClosing);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
+            this.Name = "NewEmployee";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "NewEmployee";
             this.ResumeLayout(false);
 
         }

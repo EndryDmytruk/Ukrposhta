@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Task_042022.MenuForm
 {
-    public partial class Departments : Form
+    public partial class NewEmployee : Form
     {
-        public Departments()
+        public NewEmployee()
         {
             InitializeComponent();
-        }
-
-        private void Departments_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            this.Dispose();
         }
     }
 }
