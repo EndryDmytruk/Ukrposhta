@@ -61,7 +61,8 @@ namespace Task_042022.MenuForm
 
         private void Payments_Menu_Click(object sender, EventArgs e)
         {
-
+            var newForm = new PaymentForm(_db);
+            newForm.ShowDialog();
         }
 
         private void Report_Menu_Click(object sender, EventArgs e)
