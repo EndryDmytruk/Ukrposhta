@@ -1,11 +1,11 @@
 # Ukrposhta
 
 - Вирішення C# знаходиться в папці Project
-- Вирішення Sql знаходиться у файлі Task_SQL.docx
+- Вирішення Sql знаходиться у файлі Task_SQL.docx  
 
 
 - Проект розроблено на .Net 6
-- Версія БД - PostgreSql 13.6
+- Версія БД - PostgreSql 13.6  
 
 
 - В проекті є файл конфігурацій БД, знаходиться в Project\Common\DbSetting.json.
