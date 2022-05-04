@@ -114,6 +114,8 @@
             this.ListEmployees_Table.AllowUserToDeleteRows = false;
             this.ListEmployees_Table.AllowUserToResizeColumns = false;
             this.ListEmployees_Table.AllowUserToResizeRows = false;
+            this.ListEmployees_Table.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.ListEmployees_Table.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.ListEmployees_Table.BackgroundColor = System.Drawing.SystemColors.Control;
             this.ListEmployees_Table.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ListEmployees_Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

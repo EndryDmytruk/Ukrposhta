@@ -37,7 +37,7 @@ namespace Task_042022.Controllers
                 payments += row.Salary + row.Salary / 100 * _db.Premium.Single(x => x.Id == row.IdPremium).Value;
             }
             
-            return payments.ToString() + "$";
+            return payments.ToString();
         }
 
         public List<string> GetDepartments()
